@@ -1,0 +1,3 @@
+Employees are entitled to 20 paid leaves per year.
+Unused leaves can be carried forward up to 10 days.
+Medical leave beyond 2 days requires manager approval.

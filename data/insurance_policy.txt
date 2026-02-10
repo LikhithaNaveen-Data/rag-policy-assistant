@@ -1,0 +1,3 @@
+Health insurance covers employee, spouse, and two children.
+Coverage amount is 5 lakhs per year.
+Pre-existing diseases are covered after one year.
