@@ -16,17 +16,22 @@ This project solves the problem by implementing a semantic retrieval pipeline us
 
 ---
 
-## Architecture
+
+## 🏗️ Architecture Diagram
+
+```mermaid
 flowchart TD
-    U[User Interface] --> A[API: FastAPI Backend]
-    A --> B[Query Preprocessor]
-    B --> C[Embedding Generator]
-    C --> D[(Vector Database - FAISS)]
-    D --> E[Semantic Search (Top-K)]
-    E --> F[Context Builder]
-    F --> G[LLM Inference (OpenAI / Azure / Bedrock)]
-    G --> H[Response Formatter]
-    H --> U[Response to User]
+    A[User Query] --> B[FastAPI Backend]
+    B --> C[Preprocess Query]
+    C --> D[Generate Embedding]
+    D --> E[(FAISS Vector Store)]
+    E --> F[Top-K Retrieval]
+    F --> G[Build Context Prompt]
+    G --> H[LLM Inference]
+    H --> I[Format Response]
+    I --> J[Return to User]
+```
+
 User Interface: Users input their questions (e.g., policy queries).
 
 Backend API: FastAPI receives queries, handles request validation and orchestration.
