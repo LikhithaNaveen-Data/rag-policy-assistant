@@ -37,6 +37,8 @@ Embedding Generator: Converts text into dense vectors using a chosen model (Open
 
 Vector Database (FAISS): Stores chunk embeddings from policy documents, enabling fast similarity search.
 
+---
+
 ## Evaluation & Performance Metrics
 
 To validate quality, grounding, and production readiness of this RAG system, the following criteria were measured:
